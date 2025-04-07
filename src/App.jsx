@@ -9,7 +9,7 @@ function App() {
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/comments/").then((res) => {
+    axios.get("https://jsonplaceholder.typicode.com/users/").then((res) => {
       setComments(res.data);
       setLoading(false);
     });
