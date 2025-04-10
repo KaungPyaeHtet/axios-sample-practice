@@ -53,7 +53,7 @@ function App() {
           <h1>Email Filter</h1>
           <ol>
             {comments
-              .filter((comment) => comment.toLowerCase().email.includes(email.toLowerCase()))
+              .filter((comment) => comment.email.toLowerCase().includes(email.toLowerCase()))
               .map((comment) => (
                 <li key={comment.id}>
                   <p>{comment.name}</p>
@@ -83,7 +83,7 @@ function App() {
           <h1>Name Filter</h1>
           <ol>
           {comments
-            .filter((comment) => comment.toLowerCase().email.includes(email.toLowerCase()))
+            .filter((comment) => comment.name.toLowerCase().includes(iName.toLowerCase()))
             .map((comment) => (
               <li key={comment.id}>
                 <p>{comment.name}</p>
